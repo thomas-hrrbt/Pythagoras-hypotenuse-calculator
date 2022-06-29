@@ -1,0 +1,15 @@
+import math
+
+print("Welcome to the Pythagoras hypotenuse calculator!")
+
+a,b = input("Please enter the values of the two legs of your triangle: ").split()
+
+a = float(a)
+b = float(b)
+
+if a <= 0 or b <= 0:
+    print("This triangle does not exist!")
+else:
+    print("The length of the hypotenuse is "+str(math.sqrt(pow(a,2)+pow(b,2))))
+
+k=input("press close to exit")
